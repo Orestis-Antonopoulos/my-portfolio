@@ -25,14 +25,14 @@
 
 @section('content')
 <div id="homeintroduction" 
-    class="mt-[10px] px-[5px] mx-auto py-[10px] gap-2 flex items-center justify-center rounded-xl shadow-xl max-w-[550px] min-w-[300px] h-[150px]" 
-    style="background:#CCDDFF50">
-    <div class="w-[100px] flex-shrink-0 flex flex-col">
-        <img src="{{ asset('images/mahface.webp') }}" alt="My face" class="w-[100px] h-[100px] rounded-full">
-        <span class="text-center text-sm text-white font-bold leading-3 h-[30px]">Orestis <br> Antonopoulos</span>
+    class="mt-[10px] px-[5px] mx-auto py-[10px] gap-2 flex items-center justify-center rounded-xl shadow-xl max-w-[620px] min-w-[300px] h-[150px] sm:h-[200px]" 
+    style="background:#FFFFFF50">
+    <div class="w-[100px] sm:w-[150px] flex-shrink-0 flex flex-col">
+        <img src="{{ asset('images/mahface.webp') }}" alt="My face" class="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] rounded-full">
+        <span class="text-center mt-[5px] text-sm sm:text-base font-bold h-[30px]" style="color:#00000090; line-height:1rem;">Orestis <br> Antonopoulos</span>
     </div>
     <div class="flex justify-center px-[5px]">
-        <span class="font-bold text-sm" style="color:#00006690;"> 
+        <span class="font-bold text-sm sm:text-base" style="color:#00000090;"> 
         Hello! I'm a Junior Full-Stack Developer with a knack for audio-visuals, 
         currently exploring the dynamic world of DevOps.
         </span>
@@ -44,14 +44,14 @@
         <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ss-3xl buttonbg" 
             style="background-color:#00006665;"
             onclick="selectAbout()">
-            <img src="{{ asset('svg/aboutabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough" style="fill: #ABD;">
-            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#ABD;"> ABOUT </span>
+            <img src="{{ asset('svg/aboutabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
+            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#BBB;"> ABOUT </span>
         </button>
         <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-se-3xl buttonbg" 
             style="background-color:#00006665;"
             onclick="selectContact()">
             <img src="{{ asset('svg/contactabd.svg') }}" alt="Description of the icon" class="w-[50px] clickthrough">
-            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#ABD;"> CONTACT </span>
+            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#BBB;"> CONTACT </span>
         </button>
     </div>
     <div class="flex gap-2">
@@ -59,13 +59,13 @@
             style="background-color:#00006665;"
             onclick="selectProject()">
             <img src="{{ asset('svg/projectsabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
-            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#ABD;"> PROJECTS </span>
+            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#BBB;"> PROJECTS </span>
         </button>
         <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ee-3xl buttonbg" 
             style="background-color:#00006665;"
             onclick="selectSkills()">
             <img src="{{ asset('svg/skillsabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
-            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#ABD;"> SKILLS </span>
+            <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#BBB;"> SKILLS </span>
         </button>
     </div>
 </div>

@@ -12,7 +12,7 @@
 @include('layouts.bganimation')
 
 <div class="absolute flex w-full h-full justify-center items-center p-[10px]">
-    <div class="container relative w-full h-full">
+    <div class="container relative w-full sm:w-[620px] h-full">
         @yield('header')
         @include('4sections')
         @yield('content')
