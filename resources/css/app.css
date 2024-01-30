@@ -112,3 +112,6 @@ body{margin: 0px;padding: 0px; background: #000; overflow:hidden;}
     opacity: 0; /* Start fully transparent */
     transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
 }
+
+.buttonhover        {background-color: #00006665;transition: background-color 0.3s ease-in-out;}
+.buttonhover:hover  {background-color: #0000AA65;}

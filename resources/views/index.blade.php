@@ -41,28 +41,24 @@
 
 <div id="homebuttons" class="absolute bottom-2 flex flex-col items-center w-full"> {{-- 4 Main Buttons --}}
     <div class="flex gap-2 mb-2">
-        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ss-3xl buttonbg" 
-            style="background-color:#00006665;"
+        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ss-3xl buttonhover" 
             onclick="selectAbout()">
             <img src="{{ asset('svg/aboutabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
             <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#BBB;"> ABOUT </span>
         </button>
-        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-se-3xl buttonbg" 
-            style="background-color:#00006665;"
+        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-se-3xl buttonhover" 
             onclick="selectContact()">
             <img src="{{ asset('svg/contactabd.svg') }}" alt="Description of the icon" class="w-[50px] clickthrough">
             <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#BBB;"> CONTACT </span>
         </button>
     </div>
     <div class="flex gap-2">
-        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-es-3xl buttonbg" 
-            style="background-color:#00006665;"
+        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-es-3xl buttonhover" 
             onclick="selectProject()">
             <img src="{{ asset('svg/projectsabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
             <span class="text-base font-bold absolute clickthrough" style="transform:rotate(-90deg) translate(0,38px); color:#BBB;"> PROJECTS </span>
         </button>
-        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ee-3xl buttonbg" 
-            style="background-color:#00006665;"
+        <button class="w-[85px] h-[75px] flex flex-col items-center justify-center hover:cursor-pointer relative rounded-ee-3xl buttonhover" 
             onclick="selectSkills()">
             <img src="{{ asset('svg/skillsabd.svg') }}" alt="Description of the icon" class="w-[40px] clickthrough">
             <span class="text-base font-bold absolute clickthrough" style="transform:rotate(90deg) translate(0,38px); color:#BBB;"> SKILLS </span>
