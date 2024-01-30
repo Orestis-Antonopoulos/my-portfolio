@@ -103,3 +103,12 @@ body{margin: 0px;padding: 0px; background: #000; overflow:hidden;}
         transform: translateY(0px);
     }}
 
+.group:hover .tooltip-content {
+    opacity: 0.6; /* Full opacity */
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s; /* Apply transition to opacity and delay hiding the element */
+}
+    
+.tooltip-content {
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
