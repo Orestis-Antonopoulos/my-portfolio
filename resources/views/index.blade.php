@@ -2,23 +2,65 @@
 
 @section('header')
 <style>
-    .buttonbg   {animation-name: buttonbg;  animation-duration: 5s; animation-iteration-count: infinite;}
-    @keyframes buttonbg {
-        0%      {background: #00006665;}
-        10%  {background: #22006670;}
-        20%   {background: #44006675;}
-        30%     {background: #66006680;}
-        40%   {background: #44006675;}
-        50%  {background: #22006670;}
-        60%    {background: #00006665;}
-        100%    {background: #00006665;}}
+.toggle-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .firstsvg {
+      fill: #bbb; /* Default fill color */
+      transition: fill 0.3s ease; /* Smooth transition for color change */
+    }
+  .toggle-wrapper input[type="checkbox"]:checked ~ .firstsvg {
+    fill: #fff; /* Change to your preferred "checked" color */
+  }
+  
+    .secondsvg {
+        fill: #bbb; /* Default fill color */
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+    .toggle-wrapper input[type="checkbox"]:checked ~ .secondsvg {
+      fill: #fff; /* Change to your preferred "checked" color */
+      animation: blurAnimation 2s infinite; /* Apply the animation */
+    }
+    @keyframes blurAnimation {
+    0%, 100% {
+      filter: blur(3px);
+      opacity: 50%;
+    }
+    50% {
+      filter: blur(4px);
+      opacity: 100%;
+    }
+  }
+
 </style>
 
 <div id="topcontrols">
     <ul class="flex gap-[10px] justify-end">
-        <li class="rounded w-[50px] h-[50px]" style="background:#FFFFFF50"></li>
-        <li class="rounded w-[50px] h-[50px]" style="background:#FFFFFF50"></li>
-        <li class="rounded w-[50px] h-[50px]" style="background:#FFFFFF50"></li>
+        <label class="toggle-wrapper rounded-lg w-[50px] h-[50px] flex justify-center items-center cursor-pointer
+            bg-[#00006665] hover:bg-[#0000AA65] has-[:checked]:bg-[#0000FF65]">
+            <input type="checkbox" class="opacity-0 absolute w-full h-full">
+            <svg class="firstsvg p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512.001 512.001">
+                <path d="M167.228 82.855v272.542c-15.859-14.147-36.757-22.76-59.632-22.76-49.45 0-89.681 40.231-89.681 89.682s40.231 89.682 89.681 89.682c49.389 0 89.578-40.13 89.68-89.495h.002V203.475l266.757-67.621v147.195c-15.859-14.147-36.757-22.76-59.631-22.76-49.451 0-89.682 40.231-89.682 89.681 0 49.451 40.231 89.682 89.682 89.682 49.45 0 89.681-40.232 89.681-89.682V0L167.228 82.855z"/>
+            </svg>
+            <svg class="secondsvg absolute p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512.001 512.001">
+                <path d="M167.228 82.855v272.542c-15.859-14.147-36.757-22.76-59.632-22.76-49.45 0-89.681 40.231-89.681 89.682s40.231 89.682 89.681 89.682c49.389 0 89.578-40.13 89.68-89.495h.002V203.475l266.757-67.621v147.195c-15.859-14.147-36.757-22.76-59.631-22.76-49.451 0-89.682 40.231-89.682 89.681 0 49.451 40.231 89.682 89.682 89.682 49.45 0 89.681-40.232 89.681-89.682V0L167.228 82.855z"/>
+            </svg>
+        </label>
+
+        <label class="toggle-wrapper rounded-lg w-[50px] h-[50px] flex justify-center items-center cursor-pointer
+            bg-[#00006665] hover:bg-[#0000AA65] has-[:checked]:bg-[#0000FF65]">
+            <input type="checkbox" class="opacity-0 absolute w-full h-full" checked>
+            <svg class="firstsvg p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                <path d="M9.383 3.076A1 1 0 0 1 10 4v12a1 1 0 0 1-1.707.707L4.586 13H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.586l3.707-3.707a1 1 0 0 1 1.09-.217zm5.274-.147a1 1 0 0 1 1.414 0C17.88 4.737 19 7.239 19 9.999s-1.12 5.263-2.929 7.072a1 1 0 0 1-1.414-1.414A7.971 7.971 0 0 0 17 10a7.97 7.97 0 0 0-2.343-5.657 1 1 0 0 1 0-1.414zm-2.829 2.828a1 1 0 0 1 1.415 0A5.983 5.983 0 0 1 15 10a5.984 5.984 0 0 1-1.757 4.243 1 1 0 0 1-1.415-1.415A3.984 3.984 0 0 0 13 10a3.983 3.983 0 0 0-1.172-2.828 1 1 0 0 1 0-1.415z" data-original="#000000" fill-rule="evenodd" clip-rule="evenodd"/>
+            </svg>
+            <svg class="secondsvg absolute p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                <path d="M9.383 3.076A1 1 0 0 1 10 4v12a1 1 0 0 1-1.707.707L4.586 13H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.586l3.707-3.707a1 1 0 0 1 1.09-.217zm5.274-.147a1 1 0 0 1 1.414 0C17.88 4.737 19 7.239 19 9.999s-1.12 5.263-2.929 7.072a1 1 0 0 1-1.414-1.414A7.971 7.971 0 0 0 17 10a7.97 7.97 0 0 0-2.343-5.657 1 1 0 0 1 0-1.414zm-2.829 2.828a1 1 0 0 1 1.415 0A5.983 5.983 0 0 1 15 10a5.984 5.984 0 0 1-1.757 4.243 1 1 0 0 1-1.415-1.415A3.984 3.984 0 0 0 13 10a3.983 3.983 0 0 0-1.172-2.828 1 1 0 0 1 0-1.415z" data-original="#000000" fill-rule="evenodd" clip-rule="evenodd"/>
+            </svg>
+        </label>
+        <li class="rounded-lg w-[50px] h-[50px]" style="background:#FFFFFF50"></li>
     </ul>
 </div>
 @endsection
