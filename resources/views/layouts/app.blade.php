@@ -19,7 +19,6 @@
         
     </div>
 </div>
+@yield('scripts')
 </body>
 </html>
-
-@yield('scripts')

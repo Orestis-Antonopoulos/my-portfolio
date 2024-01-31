@@ -1,4 +1,4 @@
-@extends('mainpages.about')
-@extends('mainpages.contact')
-@extends('mainpages.projects')
-@extends('mainpages.skills')
+@include('mainpages.about')
+@include('mainpages.contact')
+@include('mainpages.projects')
+@include('mainpages.skills')

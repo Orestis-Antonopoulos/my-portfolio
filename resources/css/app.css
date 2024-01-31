@@ -114,4 +114,4 @@ body{margin: 0px;padding: 0px; background: #000; overflow:hidden;}
 }
 
 .buttonhover        {background-color: #00006665;transition: background-color 0.3s ease-in-out;}
-.buttonhover:hover  {background-color: #0000AA65;}
+.buttonhover:hover  {background-color: #0000AA65;cursor: pointer;}

@@ -1,4 +1,6 @@
-<div id="projectsection" class="hidden absolute">
-    <span> This is the project Section </span>
-    <button class="bg-gray-500 p-2 rounded" onclick="backHome()"> Push me </button>
-</div>
+@include('layouts.page2header', ['sectionId'=>'projectsection','title'=>'PROJECTS'])
+
+
+
+
+@include('layouts.page2footer')
