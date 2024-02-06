@@ -1,28 +1,28 @@
 @include('layouts.page2header', ['sectionId'=>'skillssection','title'=>'SKILLS'])
 
         <div id="Languages">
-            <span>Languages:</span>
+            <span class="dark:text-[#ddd]">Languages:</span>
             <div class="flex flex-row gap-[3px] sm:gap-[5px] mt-[1px] mb-[15px]">
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
                         <div class="bg-black text-white text-xs sm:text-base font-bold rounded py-1 px-2 right-0">PHP</div> <!-- Tooltip title -->
                         <div class="w-3 h-3 bg-black rotate-45 absolute -bottom-1 left-0 right-0 mx-auto" style="z-index:-1;"></div> <!-- Tooltip arrow -->
                     </div>
-                    <img src="{{ asset('images/skills/pixelphp.png') }}" alt="A pixelated icon of PHP" class="h-[33px] sm:h-[47px] clickthrough" style="image-rendering: pixelated;">
+                    <img src="{{ asset('images/skills/php.svg') }}" alt="A pixelated icon of PHP" class="h-[33px] sm:h-[47px] clickthrough" style="image-rendering: pixelated;">
                 </div>
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
                         <div class="bg-black text-white text-xs sm:text-base font-bold rounded py-1 px-2 right-0">JavaScript</div> <!-- Tooltip title -->
                         <div class="w-3 h-3 bg-black rotate-45 absolute -bottom-1 left-0 right-0 mx-auto" style="z-index:-1;"></div> <!-- Tooltip arrow -->
                     </div>
-                    <img src="{{ asset('images/skills/pixeljavascript.png') }}" alt="A pixelated icon of Javascript" class="h-[33px] sm:h-[47px] clickthrough" style="image-rendering: pixelated;">
+                    <img src="{{ asset('images/skills/javascript.svg') }}" alt="A pixelated icon of Javascript" class="h-[33px] sm:h-[47px] clickthrough" style="image-rendering: pixelated;">
                 </div>
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
                         <div class="bg-black text-white text-xs sm:text-base font-bold rounded py-1 px-2 right-0">Bash</div> <!-- Tooltip title -->
                         <div class="w-3 h-3 bg-black rotate-45 absolute -bottom-1 left-0 right-0 mx-auto" style="z-index:-1;"></div> <!-- Tooltip arrow -->
                     </div>
-                    <img src="{{ asset('images/skills/pixelbash.png') }}" alt="A pixelated icon of Bash scripting" class="h-[33px] sm:h-[47px] clickthrough rounded" style="image-rendering: pixelated;">
+                    <img src="{{ asset('images/skills/bash.svg') }}" alt="A pixelated icon of Bash scripting" class="h-[33px] sm:h-[47px] clickthrough rounded" style="image-rendering: pixelated;">
                 </div>
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div id="Frameworks">
-            <span>Frameworks:</span>
+            <span class="dark:text-[#ddd]">Frameworks:</span>
             <div class="flex flex-row gap-[3px] sm:gap-[5px] mt-[1px] mb-[15px]">
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div id="Tools&Tech">
-            <span>Tools & Technologies:</span>
+            <span class="dark:text-[#ddd]">Tools & Technologies:</span>
             <div class="flex flex-row gap-[3px] sm:gap-[5px] mt-[1px] mb-[15px]">
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div id="extras">
-            <span>Additional Skills:</span>
+            <span class="dark:text-[#ddd]">Additional Skills:</span>
             <div class="flex flex-row gap-[3px] sm:gap-[5px] mt-[1px] mb-[15px]">
                 <div class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded flex justify-center items-center p-[5px] group relative" style="background:#FFFFFF50;">
                     <div class="absolute bottom-full mb-[-10px] clickthrough tooltip-content">
@@ -132,5 +132,6 @@
                 </div>
             </div>
         </div>
+    
 
 @include('layouts.page2footer')

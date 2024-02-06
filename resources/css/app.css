@@ -7,12 +7,14 @@ body{margin: 0px;padding: 0px; background: #000; overflow:hidden;}
 .clickthrough {pointer-events: none;} /* my custom Tailwind lulz*/
 
 /* Background animation */
-  .area{background: #bbb; 
-          width:100%;height:100vh;border-radius:5px;}
+  .area{background: #bbb; width:100%;height:100vh;border-radius:5px;}
+  body.dark .area{background: #333;}
+
   .circles{position: absolute;top: 0;left: 0;width: 100%; max-width:1536px;height: 100%;overflow: hidden;
            margin-left: auto;margin-right: auto;left: 0;right: 0;}
   .circles li{position: absolute;display: block;list-style: none;width: 20px;height: 20px;
       background: #FFFFFF99;animation: animate 25s linear infinite;bottom: -150px;}
+  body.dark .circles li{background: #FFFFFF20;}
 
   .circles li:nth-child(1){left: 25%;width: 80px;height: 80px;animation-delay: 0s;}
   .circles li:nth-child(2){left: 10%;width: 20px;height: 20px;animation-delay: 2s;animation-duration: 12s;}
@@ -114,7 +116,11 @@ body{margin: 0px;padding: 0px; background: #000; overflow:hidden;}
 }
 
 .buttonhover        {background-color: #00006665;transition: background-color 0.3s ease-in-out;}
+body.dark .buttonhover {background-color: #bbbbff95;}
 .buttonhover:hover  {background-color: #0000CC65;cursor: pointer;}
+body.dark .buttonhover:hover {background-color: #8888FFCC;}
 
-.buttontoggle       {background-color: #00006665;transition: background-color 0.3s ease-in-out;}
-.buttontoggle:hover {background-color: #0000AA65;cursor: pointer;}
+::-webkit-scrollbar {width: 5px; padding:0 5px 0 5px;} /* Width */
+::-webkit-scrollbar-track {background: #ffffff50;} /* Track */
+::-webkit-scrollbar-thumb {background: #22222250;} /* Handle */
+::-webkit-scrollbar-thumb:hover {background: #555;} /* Handle on hover */
