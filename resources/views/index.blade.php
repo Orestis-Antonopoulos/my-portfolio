@@ -290,5 +290,29 @@ darkModeToggle.addEventListener('change', function() {
   document.body.classList.toggle('dark', this.checked);
 });
 
+function sendEmail() {
+    const tempLink = document.createElement('a');
+    tempLink.href = 'mailto:skyscreamer@live.com';
+    tempLink.target = '_blank';
+    tempLink.click();
+    tempLink.remove();
+}
+function copyEmail() {
+    navigator.clipboard.writeText('skyscreamer@live.com').then(() => {
+        alert('Email copied to clipboard!');
+    });
+}
+function callPhone() {
+    const tempLink = document.createElement('a');
+    tempLink.href = 'tel:+306937832411';
+    tempLink.target = '_blank';
+    tempLink.click();
+    tempLink.remove();
+}
+function copyPhone() {
+    navigator.clipboard.writeText('+306937832411').then(() => {
+        alert('Phone number copied to clipboard!');
+    });
+}
 </script>
 @endsection

@@ -37,6 +37,18 @@
 ])
 
 @include('layouts.projectlayout', [
+    'projectTitle'=>'Listing Scrapper',
+    'achievement'=>'Sorts Hardware by Price/Performance',
+    'link'=>'#',
+    'image'=>'/images/projects/scrapper.webp',
+    'imgTailwind'=>'',
+    'summary'=>'A proof of concent web scrapper...',
+    'details'=>'It uses simplehtmldom to scrape listings of CPUs, GPUs, Desktops and Laptops from insomnia.gr and 
+    sorts them by price/performance. To do that it detects the CPU/GPU model and saves each along with its benchmark score in an xml file. 
+    Then it reads the xml file and sorts the listings by price/performance. There\'s also a daemonme.php file inside the project to daemonize so it runs every 15 minutes but it\'s not turned on.'
+])
+
+@include('layouts.projectlayout', [
     'projectTitle'=>'Laravel Portfolio',
     'achievement'=>'Snappy & Dark Mode Ready',
     'link'=>'#',
