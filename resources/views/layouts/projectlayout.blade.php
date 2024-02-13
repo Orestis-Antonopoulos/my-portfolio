@@ -1,4 +1,4 @@
- <div class="flex flex-col p-[10px] shadow-lg rounded-xl bg-[#ffffffaa] dark:bg-[#333333] mb-[50px]">
+ <div class="flex flex-col p-[10px] shadow-lg rounded-xl bg-[#ffffffaa] dark:bg-[#333333] mb-[50px] max-w-[500px] mx-auto">
     <div class="flex flex-row w-full h-[150px] relative">
         <div class="absolute z-20 left-0 flex flex-col h-[150px]">
             <h2 class="flex text-sm min-[450px]:text-base min-h-[40px] items-center rounded p-[10px] mb-[5px] text-[#000] dark:text-[#fff] border-[#33333340] dark:border-[#aaaaaa40] border bg-[#ffffffaa] dark:bg-[#33333390]">{{ $projectTitle }}</h2>
