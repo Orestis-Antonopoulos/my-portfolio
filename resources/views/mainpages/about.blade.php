@@ -2,7 +2,7 @@
 
 <!-- Download my Resumes -->
 <div class="flex flex-row justify-between max-w-[500px] mx-auto gap-[10px] mb-[50px]">
-    <div class="mx-auto p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
+    <div class="p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
         <p class="text-[#333] dark:text-[#ccc]"><span class="font-bold text-[18px]">Developer CV</span></p>
         <svg class="flex shrink-0 w-[130px]" xmlns="http://www.w3.org/2000/svg" viewBox="120 70 280 370" xml:space="preserve">
             <path class="fill-[#fff] dark:fill-[#333]" d="M350.44 437.337H120.001V74.664H392v321.112z"/>
@@ -20,7 +20,7 @@
         </div>
     </div>
     
-    <div class="mx-auto p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
+    <div class="p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
         <p class="text-[#333] dark:text-[#ccc]"><span class="font-bold text-[18px]">Complete CV</span></p>
         <svg class="flex shrink-0 w-[130px]" xmlns="http://www.w3.org/2000/svg" viewBox="120 70 280 370" xml:space="preserve">
             <path class="fill-[#fff] dark:fill-[#333]" d="M350.44 437.337H120.001V74.664H392v321.112z"/>
@@ -41,7 +41,7 @@
 
 <div class="max-w-[500px] mx-auto">
     <!-- My Strengths -->
-    <details class="shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] p-[10px] m-[20px]">
+    <details class="shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] p-[10px] mx-[4px] my-[20px]">
         <summary class="cursor-pointer text-xl font-bold text-[#333] dark:text-[#ccc]">My Strengths</summary>
         <div>
             <details class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg">
@@ -73,16 +73,32 @@
 
 
     <!-- A lifelong story -->
-    <details class="shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] p-[10px] m-[20px]">
+    <details class="shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] p-[10px] mx-[4px] my-[20px]">
         <summary class="cursor-pointer text-xl font-bold text-[#333] dark:text-[#ccc]">A lifelong story</summary>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">From a young age, the allure of coding captivated me. In 1996, as a <b>10-year-old, I dabbled in Q-basic</b>, creating interactive questionnaires reminiscent of those found in magazines, a simple yet profound introduction to the world of programming.</p>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">1996</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">From a young age, the allure of coding captivated me. In 1996, as a <b>10-year-old, I dabbled in Q-basic</b>, creating interactive questionnaires reminiscent of those found in magazines, a simple yet profound introduction to the world of programming.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2007</p>
         <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">In my twenties, <b>composing music</b> for my band with Guitar Pro mirrored coding: both combine elements-notes into cohesive structures, highlighting <b>a shared foundation in pattern recognition and creative synthesis</b>.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">Though my initial foray into the digital world was through affiliate marketing and WordPress administration, but i wad led to believe by <b>a misconception that formal university education was the only path to becoming a programmer</b>, momentarily diverting me from my dream.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">However, my passion for problem-solving reemerged at Abbadco. <b>I crafted tools with Ms Excel that streamlined payroll calculations and valuable business insights</b>, blending my love for analysis with practical utility.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">In 2021, my role at a Foodservice Equipment Supplier further honed my <b>Wordpress</b> administrative skills and problem solving particularly through a bespoke <b>Excel tool that became indispensable for managing client relationships</b>.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">It was in 2022, amidst the routine of warehouse work, that my passion for programming reignited. <b>Self-study through books and FreeCodeCamp.org</b> transformed my curiosity into a tangible skill set, culminating in a challenging yet rewarding task from my future employer: mastering PHP, Laravel, and Tailwind CSS to bring a Figma design to life.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">April 2023 marked the beginning of what I considered my dream job, a testament to perseverance and the joy of finding one's calling. Although my journey there was cut short, the experience solidified my resolve to pursue web development relentlessly.</p>
-        <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">Today, I stand committed to this path, enriched by every twist and turn of my journey. Web development is not just a profession for me; it's a lifelong passion, a constant source of fulfillment and discovery.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2008</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">Though my initial foray into the digital world was through affiliate marketing and WordPress administration, but i wad led to believe by <b>a misconception that formal university education was the only path to becoming a programmer</b>, momentarily diverting me from my dream.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2013</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">However, my passion for problem-solving reemerged at Abbadco. <b>I crafted tools with Ms Excel that streamlined payroll calculations and valuable business insights</b>, blending my love for analysis with practical utility.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2021</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">My role at a Foodservice Equipment Supplier further honed my <b>Wordpress</b> administrative skills and problem solving particularly through a bespoke <b>Excel tool that became indispensable for managing client relationships</b>.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2022</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">Amidst the routine of warehouse work, was that my passion for programming reignited. <b>Self-study through books and FreeCodeCamp.org</b> transformed my curiosity into a tangible skill set, culminating in a challenging yet rewarding task from my future employer: mastering PHP, Laravel, and Tailwind CSS to bring a Figma design to life.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-5 text-2xl font-bold text-[#00000050]">2023</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">April that year marked the beginning of what I considered my dream job, a testament to perseverance and the joy of finding one's calling. Although my journey there was cut short, the experience solidified my resolve to pursue web development relentlessly.</p>
+        </div>
+        <div class="relative flex items-center"><p class="absolute -rotate-90 -translate-x-7 text-2xl font-bold text-[#00000050]">TODAY</p>
+            <p class="p-[5px] bg-[#fff] dark:bg-[#000] m-[10px] rounded-lg shadow-lg ml-[18px]">Today, I stand committed to this path, enriched by every twist and turn of my journey. Web development is not just a profession for me; it's a lifelong passion, a constant source of fulfillment and discovery.</p>
+        </div>
         
 
 </div>
