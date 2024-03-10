@@ -115,6 +115,17 @@
 
 @section('scripts')
 <script>
+var soundEffects = {
+    backhome: new Audio('Sounds/backhome.mp3'),
+    darkmode: new Audio('Sounds/darkmode.mp3'),
+    lightmode: new Audio('Sounds/lightmode.mp3'),
+    mainbutton: new Audio('Sounds/mainbutton.mp3'),
+    musicoff: new Audio('Sounds/musicoff.mp3'),
+    soundoff: new Audio('Sounds/soundoff.mp3'),
+    soundon: new Audio('Sounds/soundon.mp3'),
+};
+
+
 function addClass(elementId, className) {
     var element = document.getElementById(elementId);
     if (element.classList.contains(className)) {
@@ -156,7 +167,7 @@ function backHome() {
     var skillsSection = document.getElementById('skillssection');
     var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/backhome.mp3');
+      var soundEffect = new Audio(soundEffects.backhome.src);
       soundEffect.volume = 0.6; // Adjust the volume as needed
       soundEffect.play();
     }
@@ -244,7 +255,7 @@ function selectAbout() {
     var aboutSection = document.getElementById('aboutsection');
     var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      var soundEffect = new Audio(soundEffects.mainbutton.src);
       soundEffect.volume = 0.3; // Adjust the volume as needed
       soundEffect.play();
     }
@@ -263,7 +274,7 @@ function selectContact() {
     var contactSection = document.getElementById('contactsection');
     var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      var soundEffect = new Audio(soundEffects.mainbutton.src);
       soundEffect.volume = 0.3; // Adjust the volume as needed
       soundEffect.play();
     }
@@ -282,7 +293,7 @@ function selectProject() {
     var projectSection = document.getElementById('projectsection');
     var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      var soundEffect = new Audio(soundEffects.mainbutton.src);
       soundEffect.volume = 0.3; // Adjust the volume as needed
       soundEffect.play();
     }
@@ -301,7 +312,7 @@ function selectSkills() {
     var skillsSection = document.getElementById('skillssection');
     var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      var soundEffect = new Audio(soundEffects.mainbutton.src);
       soundEffect.volume = 0.3; // Adjust the volume as needed
       soundEffect.play();
     }
@@ -358,8 +369,8 @@ document.getElementById('musicToggle').addEventListener('change', function() {
     musicPlayer.pause();
     removeClass('area', 'animate-background'); // Removes bg color-animation on music:off
     if (sfxEnabled) {
-      var soundEffect = new Audio('Sounds/musicoff.mp3');
-      soundEffect.volume = 0.5; // Adjust the volume as needed
+      var soundEffect = new Audio(soundEffects.musicoff.src);
+      soundEffect.volume = 0.4; // Adjust the volume as needed
       soundEffect.play();
     }
   }
@@ -369,13 +380,14 @@ document.getElementById('dark-mode-toggle').addEventListener('change', function(
   var sfxEnabled = document.getElementById('sfxToggle').checked;
   if (this.checked) {
     if (sfxEnabled) {
-        var soundEffect = new Audio('Sounds/darkmode.mp3');
+        var soundEffect = new Audio(soundEffects.darkmode.src);
         soundEffect.volume = 0.1; // Adjust the volume as needed
         soundEffect.play();
+
     } 
   }else {
     if (sfxEnabled) {
-    var soundEffect = new Audio('Sounds/lightmode.mp3');
+    var soundEffect = new Audio(soundEffects.lightmode.src);
     soundEffect.volume = 0.2; // Adjust the volume as needed
     soundEffect.play();
     }
@@ -383,8 +395,8 @@ document.getElementById('dark-mode-toggle').addEventListener('change', function(
 });
 
 document.getElementById('sfxToggle').addEventListener('change', function() {
-    var soundEffectOn = new Audio('Sounds/soundon.mp3');
-    var soundEffectOff = new Audio('Sounds/soundoff.mp3');
+    var soundEffectOn = new Audio(soundEffects.soundon.src);
+    var soundEffectOff = new Audio(soundEffects.soundoff.src);
     if (this.checked) {
         soundEffectOn.volume = 0.1; // Adjust the volume as needed
         soundEffectOn.play();

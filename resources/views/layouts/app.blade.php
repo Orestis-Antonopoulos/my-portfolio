@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="preload" href="{{ asset('Sounds/backhome.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/darkmode.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/lightmode.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/mainbutton.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/musicoff.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/soundoff.mp3') }}" as="audio">
-    <link rel="preload" href="{{ asset('Sounds/soundon.mp3') }}" as="audio">
     <title>Orestis Portfolio</title>
 
     <meta name="title" content="Portfolio of Orestis Antonopoulos">
