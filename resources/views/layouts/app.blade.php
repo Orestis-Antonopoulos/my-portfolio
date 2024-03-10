@@ -21,7 +21,8 @@
 
 @include('layouts.bganimation')
 
-<div class="absolute flex w-full justify-center items-center h-full p-2.5" style="margin-bottom:env(safe-area-inset-bottom);">
+<div class="absolute flex w-full justify-center items-center h-full" 
+style="margin-bottom:env(safe-area-inset-bottom); margin-top:env(safe-area-inset-top); padding:10px 0;">
     <div class="container relative w-full sm:w-[620px] h-full">
         @yield('header')
         @include('4sections')
