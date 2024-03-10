@@ -23,9 +23,9 @@
     @include('layouts.bganimation')
 </div>
 
-<div class=" flex w-full h-full justify-center items-center"
+<div class=" flex w-full h-[100vh] justify-center items-center"
     style="padding: 10px;">
-    <div class="container relative w-full h-full sm:w-[620px] h-full">
+    <div class="container relative w-full h-[100vh] sm:w-[620px]">
 
         @yield('header')
         @include('4sections')
