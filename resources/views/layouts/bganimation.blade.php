@@ -1,4 +1,4 @@
-<div class="area" >
+<div class="area" id="area">
     <ul class="circles">
         <li></li>
         <li></li>

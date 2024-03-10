@@ -24,7 +24,7 @@
     <ul class="flex gap-[10px] justify-end">
         <label class="toggle-wrapper rounded-lg w-[50px] h-[50px] flex justify-center items-center cursor-pointer
             bg-[#00006665] hover:bg-[#0000AA65] has-[:checked]:bg-[#0000FF65]" style="z-index:10;">
-            <input type="checkbox" class="opacity-0 absolute w-full h-full" checked>
+            <input type="checkbox" id="sfxToggle" class="opacity-0 absolute w-full h-full" checked>
             <svg class="firstsvg p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20" style="enable-background:new 0 0 512 512" xml:space="preserve">
                 <path d="M9.383 3.076A1 1 0 0 1 10 4v12a1 1 0 0 1-1.707.707L4.586 13H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.586l3.707-3.707a1 1 0 0 1 1.09-.217zm5.274-.147a1 1 0 0 1 1.414 0C17.88 4.737 19 7.239 19 9.999s-1.12 5.263-2.929 7.072a1 1 0 0 1-1.414-1.414A7.971 7.971 0 0 0 17 10a7.97 7.97 0 0 0-2.343-5.657 1 1 0 0 1 0-1.414zm-2.829 2.828a1 1 0 0 1 1.415 0A5.983 5.983 0 0 1 15 10a5.984 5.984 0 0 1-1.757 4.243 1 1 0 0 1-1.415-1.415A3.984 3.984 0 0 0 13 10a3.983 3.983 0 0 0-1.172-2.828 1 1 0 0 1 0-1.415z" data-original="#000000" fill-rule="evenodd" clip-rule="evenodd"/>
             </svg>
@@ -36,7 +36,7 @@
 
         <label class="toggle-wrapper rounded-lg w-[50px] h-[50px] flex justify-center items-center cursor-pointer relative
             bg-[#00006665] hover:bg-[#0000AA65] has-[:checked]:bg-[#0000FF65]">
-            <input type="checkbox" class="opacity-0 absolute w-full h-full">
+            <input type="checkbox" id="musicToggle" class="opacity-0 absolute w-full h-full">
             <svg class="firstsvg p-[10px]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512.001 512.001">
                 <path d="M167.228 82.855v272.542c-15.859-14.147-36.757-22.76-59.632-22.76-49.45 0-89.681 40.231-89.681 89.682s40.231 89.682 89.681 89.682c49.389 0 89.578-40.13 89.68-89.495h.002V203.475l266.757-67.621v147.195c-15.859-14.147-36.757-22.76-59.631-22.76-49.451 0-89.682 40.231-89.682 89.681 0 49.451 40.231 89.682 89.682 89.682 49.45 0 89.681-40.232 89.681-89.682V0L167.228 82.855z"/>
             </svg>
@@ -67,8 +67,8 @@
 @section('content')
 <div id="homeintroduction" 
     class="mt-[10px] px-[5px] mx-auto py-[10px] gap-2 flex items-center justify-center rounded-xl shadow-xl max-w-[620px] min-w-[300px] h-[150px] sm:h-[200px] bg-[#FFFFFF50] dark:bg-[#00000050]">
-    <div class="w-[100px] sm:w-[150px] flex-shrink-0 flex flex-col">
-        <img src="{{ asset('images/mahface.webp') }}" alt="My face" class="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] rounded-full">
+    <div class="w-[100px] sm:w-[150px] flex-shrink-0 flex flex-col items-center">
+        <img src="{{ asset('images/mahface.webp') }}" alt="My face" class="w-[100px] h-[100px] sm:w-[125px] sm:h-[125px] rounded-full">
         <span class="text-center mt-[5px] text-sm sm:text-base font-bold h-[30px] text-[#00000090] dark:text-[#ffffff90]" style="line-height:1rem;">Orestis <br> Antonopoulos</span>
     </div>
     <div class="flex justify-center px-[5px]">
@@ -78,6 +78,8 @@
         </span>
     </div>
 </div>
+<audio id="musicPlayer" src="{{ asset('Sounds/vrchatmusic32kbps.mp3') }}" loop></audio>
+
 
 <div id="homebuttons" class="absolute bottom-2 flex flex-col items-center w-full"> {{-- 4 Main Buttons --}}
     <div class="flex gap-2 mb-2">
@@ -152,6 +154,12 @@ function backHome() {
     var contactSection = document.getElementById('contactsection');
     var projectSection = document.getElementById('projectsection');
     var skillsSection = document.getElementById('skillssection');
+    var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/backhome.mp3');
+      soundEffect.volume = 0.6; // Adjust the volume as needed
+      soundEffect.play();
+    }
     if(!aboutSection.classList.contains('hidden')) {
         addClass(aboutSection.id, 'fade-out-right');
         requestAnimationFrame(function() {
@@ -234,6 +242,12 @@ function backHome() {
 }
 function selectAbout() {
     var aboutSection = document.getElementById('aboutsection');
+    var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      soundEffect.volume = 0.3; // Adjust the volume as needed
+      soundEffect.play();
+    }
     hideHome();
     requestAnimationFrame(function() {
             removeClass(aboutSection.id, 'hidden');
@@ -247,6 +261,12 @@ function selectAbout() {
 }
 function selectContact() {
     var contactSection = document.getElementById('contactsection');
+    var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      soundEffect.volume = 0.3; // Adjust the volume as needed
+      soundEffect.play();
+    }
     hideHome();
     requestAnimationFrame(function() {
             removeClass(contactSection.id, 'hidden');
@@ -260,6 +280,12 @@ function selectContact() {
 }
 function selectProject() {
     var projectSection = document.getElementById('projectsection');
+    var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      soundEffect.volume = 0.3; // Adjust the volume as needed
+      soundEffect.play();
+    }
     hideHome();
     requestAnimationFrame(function() {
             removeClass(projectSection.id, 'hidden');
@@ -273,6 +299,12 @@ function selectProject() {
 }
 function selectSkills() {
     var skillsSection = document.getElementById('skillssection');
+    var sfxEnabled = document.getElementById('sfxToggle').checked; // Sound effects check
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/mainbutton.mp3');
+      soundEffect.volume = 0.3; // Adjust the volume as needed
+      soundEffect.play();
+    }
     hideHome();
     requestAnimationFrame(function() {
             removeClass(skillsSection.id, 'hidden');
@@ -314,5 +346,53 @@ function copyPhone() {
         alert('Phone number copied to clipboard!');
     });
 }
+
+document.getElementById('musicToggle').addEventListener('change', function() {
+  var musicPlayer = document.getElementById('musicPlayer');
+  musicPlayer.volume = 0.5; // 50% volume
+  var sfxEnabled = document.getElementById('sfxToggle').checked;
+  if (this.checked) {
+    musicPlayer.play();
+    addClass('area', 'animate-background'); // Adds bg color-animation on music:on
+  } else {
+    musicPlayer.pause();
+    removeClass('area', 'animate-background'); // Removes bg color-animation on music:off
+    if (sfxEnabled) {
+      var soundEffect = new Audio('Sounds/musicoff.mp3');
+      soundEffect.volume = 0.5; // Adjust the volume as needed
+      soundEffect.play();
+    }
+  }
+});
+
+document.getElementById('dark-mode-toggle').addEventListener('change', function() {
+  var sfxEnabled = document.getElementById('sfxToggle').checked;
+  if (this.checked) {
+    if (sfxEnabled) {
+        var soundEffect = new Audio('Sounds/darkmode.mp3');
+        soundEffect.volume = 0.1; // Adjust the volume as needed
+        soundEffect.play();
+    } 
+  }else {
+    if (sfxEnabled) {
+    var soundEffect = new Audio('Sounds/lightmode.mp3');
+    soundEffect.volume = 0.2; // Adjust the volume as needed
+    soundEffect.play();
+    }
+  }
+});
+
+document.getElementById('sfxToggle').addEventListener('change', function() {
+    var soundEffectOn = new Audio('Sounds/soundon.mp3');
+    var soundEffectOff = new Audio('Sounds/soundoff.mp3');
+    if (this.checked) {
+        soundEffectOn.volume = 0.1; // Adjust the volume as needed
+        soundEffectOn.play();
+    } else {
+        soundEffectOff.volume = 0.5; // Adjust the volume as needed
+        soundEffectOff.play();
+    }
+});
+
 </script>
 @endsection
