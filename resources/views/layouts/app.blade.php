@@ -22,7 +22,7 @@
 @include('layouts.bganimation')
 
 <div class="absolute flex w-full justify-center items-center"
-    style="height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom)); top: env(safe-area-inset-top); padding:10px 0;">
+    style="height: min(calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 100vh); top: env(safe-area-inset-top); padding:10px 0;">
     <div class="container relative w-full sm:w-[620px] h-full">
         @yield('header')
         @include('4sections')
