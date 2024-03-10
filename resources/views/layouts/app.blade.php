@@ -17,13 +17,15 @@
 
 
 </head>
-<body style="font-family: 'Roboto', sans-serif;" class="flex w-full h-[100vh] justify-center items-center relative">
+<body style="font-family: 'Roboto', sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" 
+    class="flex w-full justify-center items-center relative conqueror">
 
 <div class="absolute w-full h-full z-[-1]">
     @include('layouts.bganimation')
 </div>
 
-<div class=" flex w-full h-full justify-center items-center"
+<div class="flex h-full w-full justify-center items-center"
     style="padding: 10px;">
     <div class="container relative w-full h-full sm:w-[620px]">
 
