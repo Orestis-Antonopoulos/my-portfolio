@@ -26,7 +26,7 @@
 
 <div class="flex h-full w-full justify-center items-center"
     style="padding: 10px;">
-    <div class="container relative w-full h-full sm:w-[620px]">
+    <div class="container relative w-full h-[95%] sm:w-[620px] sm:h-full">
 
         @yield('header')
         @include('4sections')
