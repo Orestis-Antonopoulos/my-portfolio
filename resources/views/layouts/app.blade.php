@@ -17,8 +17,7 @@
 
 
 </head>
-<body style="font-family: 'Roboto', sans-serif;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" 
+<body style="font-family: 'Roboto', sans-serif;" 
     class="flex w-full justify-center items-center relative conqueror">
 
 <div class="absolute w-full h-full z-[-1]">
