@@ -24,10 +24,7 @@
     @include('layouts.bganimation')
 </div>
 
-<div class="flex w-full justify-center items-start" style="padding: 10px; 
-    height: -moz-calc(100% - var(--safe-area-inset-bottom));
-    height: -webkit-calc(100% - var(--safe-area-inset-bottom));
-    height: calc(100% - var(--safe-area-inset-bottom));">
+<div class="flex w-full justify-center items-start h-full px-[10px] pt-[10px] pb-[55px] sm:pb-[10px]">
     <div class="container relative w-full h-full sm:w-[620px]">
 
         @yield('header')
