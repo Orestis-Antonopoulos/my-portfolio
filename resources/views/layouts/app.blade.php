@@ -24,7 +24,7 @@
     @include('layouts.bganimation')
 </div>
 
-<div class="flex rook w-full justify-center items-center"
+<div class="flex h-full w-full justify-center items-center"
     style="padding: 10px;">
     <div class="container relative w-full h-full sm:w-[620px]">
 
