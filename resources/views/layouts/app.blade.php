@@ -17,13 +17,14 @@
 
 
 </head>
-<body style="font-family: 'Roboto', sans-serif" class="flex w-full justify-center items-center relative" style="height:100vh;">
+<body style="font-family: 'Roboto', sans-serif; height: 100vh; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);" class="flex w-full justify-center items-center relative">
 
 @include('layouts.bganimation')
 
-<div class="absolute flex w-full justify-center items-center" 
-style="top:0; height:calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)); padding:10px;">
+<div class="absolute flex w-full justify-center items-center"
+    style="top: env(safe-area-inset-top); height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 20px); padding: 10px;">
     <div class="container relative w-full sm:w-[620px] h-full">
+
         @yield('header')
         @include('4sections')
         @yield('content')
