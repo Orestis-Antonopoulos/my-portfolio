@@ -18,15 +18,17 @@
 
 </head>
 <body style="font-family: 'Roboto', sans-serif;" 
-    class="flex w-full justify-center items-center relative conqueror">
+    class="flex w-full justify-center relative conqueror">
 
 <div class="absolute w-full h-full z-[-1]">
     @include('layouts.bganimation')
 </div>
 
-<div class="flex h-full w-full justify-center items-center"
-    style="padding: 10px;">
-    <div class="container relative w-full h-[95%] sm:w-[620px] sm:h-full">
+<div class="flex w-full justify-center items-start" style="padding: 10px; 
+    height: -moz-calc(100% - var(--safe-area-inset-bottom));
+    height: -webkit-calc(100% - var(--safe-area-inset-bottom));
+    height: calc(100% - var(--safe-area-inset-bottom));">
+    <div class="container relative w-full h-full sm:w-[620px]">
 
         @yield('header')
         @include('4sections')
