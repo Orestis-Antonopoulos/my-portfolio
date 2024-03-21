@@ -2,23 +2,25 @@
 
 <!-- Download my Resumes -->
 <div class="flex flex-row justify-between max-w-[500px] mx-auto gap-[10px] mb-[50px]">
-    <div class="p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
-        <p class="text-[#333] dark:text-[#ccc]"><span class="font-bold text-[18px]">Developer CV</span></p>
-        <svg class="flex shrink-0 w-[130px]" xmlns="http://www.w3.org/2000/svg" viewBox="120 70 280 370" xml:space="preserve">
-            <path class="fill-[#fff] dark:fill-[#333]" d="M350.44 437.337H120.001V74.664H392v321.112z"/>
-            <path class="fill-[#e22]" d="m204.576 273.336-25.672 31.193-10.784-10.497-7.12 7.72 18.736 18.224 32.736-39.784zm0 60.688-25.672 31.192-10.784-10.487-7.12 7.711 18.736 18.224 32.736-39.776z"/>
-            <path class="fill-[#ccc] dark:fill-[#191919]" d="M232.629 282.669h118.362v8H232.629zm0 19.885h118.362v8H232.629zm0 40.806h118.362v8H232.629zm0 19.884h118.362v8H232.629zm34.738-230.457h83.075v23.44h-83.075zm0 67.913h83.075v23.44h-83.075zm0-33.961h83.075v23.44h-83.075z"/>
-            <circle class="fill-[#ccc] dark:fill-[#191919]" cx="203.828" cy="153.877" r="21.13"/>
-            <path fill="#008" d="M202.824 224.096 182.4 179.848s-21.408.288-21.408 20v24.264l41.832-.016zm1.976 0 20.408-44.248s21.408.288 21.408 20v24.264l-41.816-.016z"/>
-            <path class="fill-[#999]" d="M203.824 182.016H191.08l12.744 28.208 12.744-28.208z"/>
-            <path class="fill-[#ccc] dark:fill-[#191919]" d="M350.44 437.337v-41.561H392z"/>
-        </svg>
-        <div class="w-full h-full absolute flex items-center justify-center opacity-50 hover:opacity-100 cursor-pointer">
-            <svg class="w-[75px] p-[15px] bg-[#00000080] dark:bg-[#ffffff80] rounded-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/>
+    <a href="{{ asset('files/orestisAntonopoulosResume.pdf') }}" download>
+        <div class="p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
+            <p class="text-[#333] dark:text-[#ccc]"><span class="font-bold text-[18px]">Developer CV</span></p>
+            <svg class="flex shrink-0 w-[130px]" xmlns="http://www.w3.org/2000/svg" viewBox="120 70 280 370" xml:space="preserve">
+                <path class="fill-[#fff] dark:fill-[#333]" d="M350.44 437.337H120.001V74.664H392v321.112z"/>
+                <path class="fill-[#e22]" d="m204.576 273.336-25.672 31.193-10.784-10.497-7.12 7.72 18.736 18.224 32.736-39.784zm0 60.688-25.672 31.192-10.784-10.487-7.12 7.711 18.736 18.224 32.736-39.776z"/>
+                <path class="fill-[#ccc] dark:fill-[#191919]" d="M232.629 282.669h118.362v8H232.629zm0 19.885h118.362v8H232.629zm0 40.806h118.362v8H232.629zm0 19.884h118.362v8H232.629zm34.738-230.457h83.075v23.44h-83.075zm0 67.913h83.075v23.44h-83.075zm0-33.961h83.075v23.44h-83.075z"/>
+                <circle class="fill-[#ccc] dark:fill-[#191919]" cx="203.828" cy="153.877" r="21.13"/>
+                <path fill="#008" d="M202.824 224.096 182.4 179.848s-21.408.288-21.408 20v24.264l41.832-.016zm1.976 0 20.408-44.248s21.408.288 21.408 20v24.264l-41.816-.016z"/>
+                <path class="fill-[#999]" d="M203.824 182.016H191.08l12.744 28.208 12.744-28.208z"/>
+                <path class="fill-[#ccc] dark:fill-[#191919]" d="M350.44 437.337v-41.561H392z"/>
             </svg>
+            <div class="w-full h-full absolute flex items-center justify-center opacity-50 hover:opacity-100 cursor-pointer">
+                <svg class="w-[75px] p-[15px] bg-[#00000080] dark:bg-[#ffffff80] rounded-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/>
+                </svg>
+            </div>
         </div>
-    </div>
+    </a>
     
     <div class="p-[5px] max-w-[150px] shadow-lg rounded-xl bg-[#ffffff90] dark:bg-[#00000090] flex flex-col gap-[10px] items-center justify-between relative">
         <p class="text-[#333] dark:text-[#ccc]"><span class="font-bold text-[18px]">Complete CV</span></p>
