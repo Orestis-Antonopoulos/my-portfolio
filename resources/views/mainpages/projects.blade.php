@@ -15,12 +15,12 @@
 @include('layouts.projectlayout', [
     'projectTitle'=>'Personal Almalinux 8 Server',
     'achievement'=>'Actively hosting websites',
-    'link'=>'#',
+    'link'=>'https://github.com/Orestis-Antonopoulos/cloudflareDDNS',
     'image'=>'/images/projects/server.svg',
     'imgTailwind'=>'p-5',
-    'summary'=>'Read more...',
+    'summary'=>'Almalinux 8 home server...',
     'details'=>'Configured a headless Almalinux 8 server to enhance web project deployment. Implemented a robust reverse proxy using nginx, 
-    ensuring secure connections through SSL certification. Developed a custom DDNS updater script, to monitor and update IPv4/IPv6 addresses via Cloudflare API.'
+    ensuring secure connections through SSL certification. <span class="font-bold dark:text-white">Developed a custom DDNS updater script</span>, to monitor and update IPv4/IPv6 addresses via Cloudflare API.'
 ])
 
 @include('layouts.projectlayout', [
@@ -31,9 +31,9 @@
     'imgTailwind'=>'',
     'summary'=>'A professional dental website...',
     'details'=>'This project was developed to enhance the online presence of my dentist. It\'s hosted on my personal AlmaLinux server, 
-    leveraging <b>Docker</b> for containerization, and employs <b>Nginx as a reverse proxy</b> to efficiently manage web traffic. 
+    leveraging <span class="font-bold dark:text-white">Docker</span> for containerization, and employs <span class="font-bold dark:text-white">Nginx as a reverse proxy</span> to efficiently manage web traffic. 
     The site is powered by WordPress, with a customized child theme based on OceanWP to ensure a unique and responsive design. 
-    To enhance my skills with AWS, I integrated the contact form with <b>Amazon Simple Email Service (SES)</b> for reliable email delivery.'
+    To enhance my skills with AWS, I integrated the contact form with <span class="font-bold dark:text-white">Amazon Simple Email Service (SES)</span> for reliable email delivery.'
 ])
 
 @include('layouts.projectlayout', [
@@ -51,13 +51,13 @@
 @include('layouts.projectlayout', [
     'projectTitle'=>'Laravel Portfolio',
     'achievement'=>'Snappy & Dark Mode Ready',
-    'link'=>'#',
+    'link'=>'https://github.com/Orestis-Antonopoulos/my-portfolio',
     'image'=>'/images/projects/oacom.webp',
     'imgTailwind'=>'',
-    'summary'=>'The standout feature of...',
-    'details'=>'...my portfolio site, OrestisAntonopoulos.com, is its seamless integration of Laravel, PHP, and JavaScript, 
+    'summary'=>'Dockerized with Laradock...',
+    'details'=>'The standout feature of my portfolio site, OrestisAntonopoulos.com, is its seamless integration of Laravel, PHP, and JavaScript, 
     transforming it into a dynamic single-page application (SPA). This approach eliminates traditional page reloads, 
-    offering a fluid user experience enhanced by snappy animations. Additionally, I\'ve incorporated Tailwind CSS for a customizable dark mode, 
+    offering a fluid user experience enhanced by snappy animations. Additionally, I\'ve incorporated Tailwind CSS for a customizable <span class="font-bold dark:text-white">dark mode</span>, 
     providing users with a visually comfortable browsing option. '
 ])
 

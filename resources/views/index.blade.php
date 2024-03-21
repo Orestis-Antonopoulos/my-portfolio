@@ -360,7 +360,7 @@ function copyPhone() {
 
 document.getElementById('musicToggle').addEventListener('change', function() {
   var musicPlayer = document.getElementById('musicPlayer');
-  musicPlayer.volume = 0.5; // 50% volume
+  musicPlayer.volume = 0.3; // 50% volume
   var sfxEnabled = document.getElementById('sfxToggle').checked;
   if (this.checked) {
     musicPlayer.play();
@@ -370,7 +370,7 @@ document.getElementById('musicToggle').addEventListener('change', function() {
     removeClass('area', 'animate-background'); // Removes bg color-animation on music:off
     if (sfxEnabled) {
       var soundEffect = new Audio(soundEffects.musicoff.src);
-      soundEffect.volume = 0.4; // Adjust the volume as needed
+      soundEffect.volume = 0.3; // Adjust the volume as needed
       soundEffect.play();
     }
   }
